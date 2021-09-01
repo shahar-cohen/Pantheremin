@@ -23,18 +23,17 @@ dispatcher.map("/*", filter_handler)
 
 
 async def loop():
-    """Example main loop that only runs for 10 iterations before finishing"""
     while(True):
         await asyncio.sleep(1)
 
 
 async def init_main():
     server = AsyncIOOSCUDPServer((ip, port), dispatcher, asyncio.get_event_loop())
-    transport, protocol = await server.create_serve_endpoint()  # Create datagram endpoint and start serving
+    transport, protocol = await server.create_serve_endpoint()
 
-    await loop()  # Enter main loop of program
+    await loop()
 
-    transport.close()  # Clean up serve endpoint
+    transport.close() 
 
 
 asyncio.run(init_main())
