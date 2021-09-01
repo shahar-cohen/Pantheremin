@@ -1,37 +1,15 @@
-## Welcome to GitHub Pages
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_-8Fbb_CeyA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+A musical experience like no other
+A combination of pantam fingerdrumming and theremin proximity-based playing, the PanTheremin is the perfect tool for people of all ages. Some knowledge in fabrication, 3D design, arduino, electrical engineering, sound design, programming and music theory might be needed for construction.
 
-You can use the [editor on GitHub](https://github.com/shahar-cohen/Pantheremin/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Design
+Parametric pattern design, created using Grasshopper on Rhino. The algorithmically generated triangle pattern creates a spacey feeling fitting the playing experience we wanted to convey.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Communications
+Using arduino, we converted the signal from the proximity IR sensors into MIDI messages. Those were channelled to Ableton Live for producing actual sounds, designed by us from available plugins. The MIDI messages were also used to create a OSC message signal, which was sent to the visualization monitor, influencing the speed and color of the waves presented on it.
 
-### Markdown
+Fun
+Yes, it is very fun.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/shahar-cohen/Pantheremin/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Created by
+Tamir, Shahar and Daniella. Tamir's info is on GitHub (link on the top left). Hire Him!
