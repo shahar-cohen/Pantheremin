@@ -1,8 +1,13 @@
-## A musical experience like no other
+##  Proximity based MIDI musical instrument
 
-[![Watch the video](https://img.youtube.com/vi/_-8Fbb_CeyA/default.jpg)](https://youtu.be/_-8Fbb_CeyA)
+An arduino-based musical instrument with live generated parametric visuals.
 
-A combination of pantam fingerdrumming and theremin proximity-based playing, the PanTheremin is the perfect tool for people of all ages. Some knowledge in fabrication, 3D design, arduino, electrical engineering, sound design, programming and music theory might be needed for construction.
+https://github.com/shahar-cohen/Pantheremin/assets/39126169/9d450cb4-aabc-45f0-8d99-5710001c22b8
+
+### Hardware
+-Arduino Leonardo
+-3 IR proximity sensors
+-Piezoelectric vibration sensor
 
 ### Design
 
@@ -11,4 +16,4 @@ Parametric pattern design, created using Grasshopper on Rhino. The algorithmical
 ### Communications
 
 Using arduino, we converted the signal from the proximity IR sensors into MIDI messages. Those were channelled to Ableton Live for producing actual sounds, designed by us from available plugins.
-The MIDI messages were also used to create a OSC message signal, which was sent to the visualization monitor, influencing the speed and color of the waves presented on it.
+A dedicated script converts incoming MIDI messages to OSC messages which are received by the Grasshopper add-on to Rhino. These software generate the visualization on the screen, and change the speed and color of the waves according to the sounds.
